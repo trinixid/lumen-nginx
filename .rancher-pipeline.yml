@@ -1,0 +1,10 @@
+stages:
+- name: build and push
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: lumen-nginx
+      pushRemote: true
+      registry: reg-k8s.qasir.id:30001
+timeout: 60
