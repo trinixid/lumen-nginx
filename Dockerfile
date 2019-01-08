@@ -2,7 +2,7 @@ FROM nginx:1.10.0-alpine
 
 MAINTAINER asri djufri <asri@trinix.id>
 
-ARG PHP_UPSTREAM=127.0.0.1
+ARG PHP_UPSTREAM='127.0.0.1'
 
 COPY auto-reload-nginx.sh /home/auto-reload-nginx.sh
 COPY nginx.conf /etc/nginx/
